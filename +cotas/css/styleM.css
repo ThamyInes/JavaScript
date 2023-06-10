@@ -1,0 +1,114 @@
+.contenedor{
+    width: 70%;
+    margin: auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.t1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgPortada{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.li-hover{
+    background-color: rgb(33, 38, 57);
+    border-radius: 5px;
+}
+   
+.menu{
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 20px;
+
+}
+.menu li{
+    padding: 20px;
+}
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.p2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.img2{
+    width: 50%;
+    float: left;
+}
+nav{
+    width: 70%;
+    text-align: center;
+    background-color: rgb(33, 38, 57);
+    margin: auto;
+    border-radius: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.section{
+    width: 70%;
+    margin: auto;
+  
+}
+.contacto{ 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.p3{
+    width: 70%;
+    text-align: justify;
+}
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.datos{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+}
+.p4{
+    text-align: justify;
+}
+.calidad{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.personal{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+.table, th, td {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: gray;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.p5{
+    text-align: justify;
+}
+.servicios{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.lista{
+    margin: auto;
+    width: 22%;
+    
+}
+.bot-form{
+    background-color: cadetblue;
+    border: none;
+}
