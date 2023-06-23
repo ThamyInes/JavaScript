@@ -76,3 +76,97 @@ console.log(posicion);
  */
 let subcadena1=cadena1.substring(6,10);
 console.log(subcadena1);
+
+/**
+ * Cuando se indica el inicio y el final, se devuelve la parte de la cadena original comprendida entre la posición inicial y la inmediata anterior a la posición final (es decir, la posición inicio está incluida y la posición final no)
+ */
+/* Otro Ejemplo, si se le pasa la posición inicial mayor a la final, se asume que es la posicion menor es desde donde comienza y la mayor donde termina
+ */
+
+subcadena1=cadena1.substring(10,6);
+console.log(subcadena1);
+
+/** Convertir una cadena a un array con la función split, se debe indicar el carácter separador 
+ */
+let cadena3="Los alumnos son 15 y son muy listos";
+let arrayCadena3=cadena3.split(" ");
+console.log(arrayCadena3);
+console.log(arrayCadena3[1]);
+
+//Con split también puedo extraer todas las letras de una cadena indicando el separador vacio " "
+let array2Cadena3=cadena3.split("  ");
+console.log(array2Cadena3);
+
+//FUNCIONES ÚTILES PARA ARRAYS
+
+//Conocer la longitud de un array
+
+let miArray=[1,2,3,4,5,6,7,8,9];
+//Explicacion en la linea 150
+let micopiaArray=miArray;
+console.log(micopiaArray);
+let numElementos=miArray.length;
+console.log(numElementos);
+
+// Funcion para unir o concatenar dos arrays
+
+let array3=array2Cadena3.concat(miArray);
+console.log(array3);
+
+// Funcion join que es lo inverso a split en las cadenas, convierte una Array en una cadena
+
+let deArrayAcadena=arrayCadena3.join(" "); 
+console.log(deArrayAcadena);
+
+let miArrayAcadena=miArray.join(" - ");
+console.log(miArrayAcadena);
+
+//Funcion pop(), elimina el último elemento del array y lo devuelve. El array original se modifica y su longitud disminuye en 1 elemento.
+
+let ultimo=miArray.pop();
+console.log(ultimo);
+console.log(miArray);
+
+//Funcio push(), añade un elemento al final del array. El array original se modifica y aumenta su longitud en 1 elemento. (También es posible añadir más de un elemnto a la vez)
+
+miArray.push("Thamy");
+console.log(miArray);
+
+//Función shift(), elimina el primer elemento de array y lo devuelve. El array originalse va modificando y su longitud disminuida en 1 elemento
+
+let primero=miArray.shift();
+console.log(primero);
+console.log(miArray);
+
+// Función unshift(), añade un elemento al principio del array. El array original se modifica y aumenta su longitud en 1 elemento. (También es posible añadir más de un elemento a la vez)
+
+let otroValor=5;
+miArray.unshift(otroValor);
+console.log(miArray);
+
+//Función reverse(), modifica un array colocando sus elementos en el orden inverso a su posición original
+
+miArray.reverse();
+console.log(miArray);
+
+//Es usual realizar operaciones con array, s es necesario para el flujo del programa que el array origina se mantenga, debemos realizar una copia del array, porque estos métodos modifican directamente el array.
+
+
+
+
+// Funciones con número
+/**
+ * Funcion NaN, (del inglés, "Not a Number") JavaScript emplea el valor NaN para indicar un valor numérico no definido (por ejemplo, la división 0/0)
+ */
+
+let numero1=10,numero2=5;
+let operacion=numero1/numero2;
+console.log(numero1/numero2); //NaN
+
+if (isNaN(operacion)){ // True
+    console.log("resultado indefinido");
+}else{
+    console.log("El resultado es -> " + numero1/numero2);
+}
+
+//Números infinitos
