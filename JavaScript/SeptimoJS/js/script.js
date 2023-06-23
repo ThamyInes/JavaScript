@@ -170,3 +170,33 @@ if (isNaN(operacion)){ // True
 }
 
 //Números infinitos
+//Infinity hace referencia a un valor numérico infinito y positivo (también existe el valor - Infinity para los infinitos negativos )
+let numero3=0;
+console.log(numero1/numero3);
+
+//si necesitamos limitar los decimales y redondearlos, utilizamos la funcion toFixed
+
+let decimales=35982.659874255455;
+console.log(decimales.toFixed(3));
+console.log(decimales.toFixed(2));
+console.log(decimales.toFixed(4));
+console.log(decimales.toFixed());
+
+//Ejercicio: lee un numero decimal y devuelvelo convertido el . en ,
+
+function cambiar(){
+    let numero=document.getElementById("numero").value;
+    console.log(numero);
+    let elementos=numero.split(".");
+    console.log(elementos);
+
+    //Concatenando
+    let cadenaNumero=elementos[0] + "," +elementos[1];
+    //con el metodo join
+    
+    let cadenaNumero2=elementos.join(",");
+    console.log(cadenaNumero);
+    console.log(cadenaNumero2);
+    document.getElementById("numeroDev").innerHTML=cadenaNumero;
+
+}
